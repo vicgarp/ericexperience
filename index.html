@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eric Experience</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"/> 
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="row mainFeature">
+        <div onclick="playAudio();amensagem()" class="ericFoto col-lg-12">
+            <img src="foto/siteeric.jpg" alt="Eric-exp">
+        </div>
+    </div>
+
+    <audio id="myAudio" controls autoplay>
+        <source src="foto/audio.mp3"type="audio/mpeg">
+    </audio> 
+
+    
+
+    <div class="mensagem h-100 d-flex align-items-center justify-content-center">
+        <div id="popUp" class="popup">
+        <p ></p>Obrigado pela visita! Clique <a href="index.html">aqui</a> para ter uma experiência com Eric novamente</p>
+          </div>
+     </div> 
+
+    <script>
+        function playAudio(){
+            let x = document.getElementById("myAudio");
+            x.play();
+        }
+
+        </script>
+
+    <script>
+
+        function amensagem(){
+            document.getElementById("popUp").style.opacity = "1";
+        }
+    </script>
+    
+</body>
+</html>
